@@ -1,10 +1,10 @@
 {
   "name": "spell-checker-improved-plugin-sample",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./lib/main",
   "description": "spell checker sample plugin",
-  "repository": "",
-  "license": "",
+  "repository": "https://github.com/marcelkohl/spell-checker-improved-plugin-sample",
+  "license": "GPLv3",
   "engines": {
     "atom": "*"
   },

@@ -7,10 +7,11 @@ Sample plugin structure for spell checker improved atom module
 
 ## How it works
 This plugin supports the [spell checker improved] atom module just by subscribing to the module services.
-The available methods that could be implemented are:
+The available methods that must be implemented are:
 
 | method | parameter  | return  | description  |
 |---|---|---|---|
-|getPluginName| |<em>string</em>|returns the name of the plugin/module so the spell checker module can identify this plugin|
+|getScopes| |<em>string[]</em>|Gives a list of file scopes to be covered by the plugin. Ex.:source.js, text.html.basic, etc. Live empty if the scope could be any.|
+|getPluginName| |<em>string</em>|Returns the name of the plugin/module so the spell checker module can identify this plugin|
 |onCheckWord|<em>string</em> wordToCheck|<em>boolean</em> true if word is fine, false if not|This method is called every time that a word was considered misspelled by the default spell checker or other plugins|
 |onGetSuggestions|<em>string</em> wordThatNeedsSuggestions|<em>string[]</em> a list of suggested words for the parameter word|This method is called every time the user requests for suggestions of a specific misspelled word|
