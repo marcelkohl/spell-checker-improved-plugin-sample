@@ -15,3 +15,4 @@ The available methods that must be implemented are:
 |getPluginName| |<em>string</em>|Returns the name of the plugin/module so the spell checker module can identify this plugin|
 |onCheckWord|<em>string</em> wordToCheck|<em>boolean</em> true if word is fine, false if not|This method is called every time that a word was considered misspelled by the default spell checker or other plugins|
 |onGetSuggestions|<em>string</em> wordThatNeedsSuggestions|<em>string[]</em> a list of suggested words for the parameter word|This method is called every time the user requests for suggestions of a specific misspelled word|
+|onMisspellMarked|<em>array</em> misspelledWords<br /><em>object</em> timersAt||Event called when the improved spell checker finishes to mark the misspelled words.This method is optional and can be implemented only when is needed.|
