@@ -6,7 +6,7 @@
 Sample plugin structure for spell checker improved atom module
 
 ## How it works
-This plugin supports the [spell checker improved] atom module just by subscribing to the module services.
+This plugin supports the [spell checker improved](https://github.com/marcelkohl/spell-checker-improved) atom module just by subscribing to the module services.
 The available methods that must be implemented are:
 
 | method | parameter  | return  | description  |
